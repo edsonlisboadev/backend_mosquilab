@@ -1,0 +1,84 @@
+# ============================================================
+# SEGREDOS — nunca versionar
+# ============================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ============================================================
+# BINÁRIOS COMPILADOS
+# O Render compila na nuvem; não precisa versionar o executável
+# ============================================================
+server
+/bin/
+/dist/
+
+# Qualquer binário Go na raiz
+mosquilab
+mosquilab-backend
+
+# ============================================================
+# GO
+# ============================================================
+# Cache de build local
+/vendor/
+
+# Cobertura de testes
+*.out
+coverage.html
+coverage.txt
+
+# Profiling
+*.prof
+*.test
+
+# ============================================================
+# SISTEMA OPERACIONAL
+# ============================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================================
+# IDEs / EDITORES
+# ============================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# GoLand / IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Vim / Neovim
+*.swp
+*.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+
+# Emacs
+\#*\#
+.\#*
+
+# ============================================================
+# DOCKER (se usar futuramente)
+# ============================================================
+docker-compose.override.yml
+
+# ============================================================
+# LOGS
+# ============================================================
+*.log
+logs/
